@@ -17,7 +17,7 @@ app.use(helmet());
 
 const allowedOrigins = [
   "http://localhost:3000",  // dev
-  "https://portfoliofun.netlify.app/"// production
+  "https://portfoliofun.netlify.app"// production
 ];
 
 app.use(cors({
