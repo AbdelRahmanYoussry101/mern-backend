@@ -8,9 +8,7 @@ import bcrypt from "bcrypt";
 import multer from "multer";
 import jwt from "jsonwebtoken";
 import helmet from "helmet";
-
 import { v2 as cloudinary } from "cloudinary";
-import profile from "./models/profile.js";
 dotenv.config();
 
 
@@ -19,7 +17,7 @@ app.use(helmet());
 
 const allowedOrigins = [
   "http://localhost:3000",  // dev
-  "https://myapp.com"       // production
+  "https://portfoliofun.netlify.app/"// production
 ];
 
 app.use(cors({
